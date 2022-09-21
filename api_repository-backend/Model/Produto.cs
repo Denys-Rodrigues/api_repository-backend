@@ -1,7 +1,10 @@
-﻿namespace api_repository_backend.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace api_repository_backend.Model
 {
     public class Produto
     {
+        [Key]
         public int Id{ get; set; }
 
         public string Nome { get; set; }
